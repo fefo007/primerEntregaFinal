@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carga de productos</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <div>
+            <h2 class="formTitle">Ingrese nuevo producto</h2>
+            <form class=" row g-4 mg-4"  action="/api/productos" method="POST">
+                <div class="col-sm-8">
+                    <label class="form-label m-2" for="nombre">Nombre</label>
+                    <input id="nombre" class="form-control m-2 " type="text" name="nombre" placeholder="ingrese el nombre">
+                </div>
+                <div class="col-sm-8">
+                    <label class="form-label m-2"  for="precio">Precio</label>
+                    <input id="precio" class="form-control m-2 " type="text" name="precio" placeholder="ingrese el precio">
+                </div>
+                <div class="col-sm-8">
+                    <label class="form-label m-2"  for="Descripcion">Descripcion</label>
+                    <input id="Descripcion" class="form-control m-2 " type="text" name="Descripcion" placeholder="ingrese la descripcion">
+                </div>
+                <div class="col-sm-8">
+                    <label class="form-label m-2"  for="Codigo">Codigo</label>
+                    <input id="Codigo" class="form-control m-2 " type="text" name="Codigo" placeholder="ingrese el Codigo">
+                </div>
+                <div class="col-sm-8">
+                    <label class="form-label m-2"  for="url">URL</label>
+                    <input id="url" class="form-control m-2 " type="text" name="url" placeholder="ingrese la url">
+                </div>
+                <div class="col-sm-8">
+                    <label class="form-label m-2"  for="Stock">Stock disponible</label>
+                    <input id="Stock" class="form-control m-2 " type="text" name="Stock" placeholder="ingrese el Stock disponible">
+                </div>
+                <div class="col-sm-8">
+                    <input class="btn btn-primary m-3" value="Cargar Producto" type="submit">
+                </div>
+            </form>
+        </div> 
+    </section>
+</body>
+</html>
